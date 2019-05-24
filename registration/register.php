@@ -30,11 +30,11 @@ if(($_SERVER['REQUEST_METHOD']=='POST')&&(isset($_POST['email']))){
 			  )
 			);
 			$mail->isHTML();
-			$mail->Username ='hrk27071999@gmail.com';
-			$mail->Password = 'h@ARSHIT000';
-			$mail->SetFrom('no-reply@chudap.com');
-			$mail->Subject = 'Lunchbox activation';
-			$mail->Body = 'copy and paste this link to activate account:   https://thelunchbox.azurewebsites.net/verification.php?uid='.$verlink;
+			$mail->Username ='adminGaatha@gmail.com';
+			$mail->Password = 'Ad@min123';
+			$mail->SetFrom('no-reply@gaatha.com');
+			$mail->Subject = 'Gaatha activation';
+			$mail->Body = 'copy and paste this link to activate account:   https://gaathaLinkHere/verification.php?uid='.$verlink;
 			$mail->AddAddress($emailid);
 			if(!($mail->send())){
 				$query2="DELETE FROM users WHERE email='$emailid'";
